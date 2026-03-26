@@ -29,7 +29,7 @@ def predict():
     final_input = scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=linear_reg_model.predict(final_input)[0]
-    return render_template("home.html",prediction_text="The house pr" \
+    return render_template("home.html",prediction_text="The house price " \
     "prediction is {}".format(output))
 
 
